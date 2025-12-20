@@ -16,11 +16,11 @@ window.onload = function () {
     questions: [who, action, what, when]
   }
 
-  function excusesGenerator(excuses) {
+  function excusesGenerator(arr) {
     let sentence = "";
-    for (let i = 0; i < excuses.questions.length; i++) {
-      let randomWord = Math.floor(Math.random() * excuses.questions[i].length);
-      sentence += excuses.questions[i][randomWord] + ' '
+    for (let i = 0; i < arr.questions.length; i++) {
+      let randomWord = Math.floor(Math.random() * arr.questions[i].length);
+      sentence += arr.questions[i][randomWord] + ' '
       console.log(sentence);
     }
     document.getElementById("excuse").innerHTML = sentence;
