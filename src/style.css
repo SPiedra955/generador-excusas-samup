@@ -1,5 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+body {
     background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
